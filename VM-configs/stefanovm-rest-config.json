@@ -9,22 +9,6 @@
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/059",
                     "weigthfactor":0
                 },
-                "crab3@vocms0194.cern.ch" : {
-                    "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0194",
-		    "weightfactor": 1
-                },
-                "crab3@vocms0195.cern.ch" : {
-                    "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0195",
-		    "weightfactor": 1
-                },
-                "crab3@vocms0196.cern.ch" : {
-                    "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0196",
-		    "weightfactor": 1
-                },
-                "crab3@vocms0197.cern.ch" : {
-                    "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0197",
-		    "weightfactor": 1
-                },
                 "crab3@vocms0198.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0198",
 		    "weightfactor": 1
