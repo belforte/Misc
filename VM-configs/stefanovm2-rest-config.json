@@ -18,7 +18,7 @@
 		    "weightfactor": 0
                 }
 
-            }
+            },
             "htcondorPool" : "cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov",
             "asoConfig" : [
                 {"couchURL" : "https://cmsweb.cern.ch/crabserver/prod" , "couchDBName" : "filetransfers"}
