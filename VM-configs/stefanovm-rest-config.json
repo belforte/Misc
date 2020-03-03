@@ -1,9 +1,6 @@
 {
  "crab-dev": {
-  "delegate-dn": [ "/DC=ch/DC=cern/OU=computers/CN=stefanovm.cern.ch",
-		 "/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch",
-		  "/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch",
-		  "/DC=ch/DC=cern/OU=computers/CN=(ddi|ddivm2|mytw).cern.ch"],
+  "delegate-dn": ["/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddivm2|mytw).cern.ch"],
   "backend-urls": {
   "cacheSSL": "https://stefanovm.cern.ch/crabcache",
   "baseURL": "https://stefanovm.cern.ch/crabcache",
