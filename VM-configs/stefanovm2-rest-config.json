@@ -1,13 +1,17 @@
 {
-    "crab-dev": {
-        "delegate-dn": [ "/DC=ch/DC=cern/OU=computers/CN=stefanovm2.cern.ch" ],
-        "backend-urls": {
-            "cacheSSL": "https://stefanovm2.cern.ch/crabcache",
-            "baseURL": "https://stefanovm2.cern.ch/crabcache",
-            "htcondorSchedds" : {
+ "crab-dev": {
+  "delegate-dn": ["/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddivm2|mytw).cern.ch"],
+  "backend-urls": {
+  "cacheSSL": "https://stefanovm2.cern.ch/crabcache",
+  "baseURL": "https://stefanovm2.cern.ch/crabcache",
+  "htcondorSchedds" : {
                 "crab3-5@vocms059.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/059",
-                    "weigthfactor":0
+                    "weigthfactor":1
+                },
+                "crab3@vocms0106.cern.ch" : {
+                    "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0106",
+		    "weightfactor": 0
                 },
                 "crab3@vocms0198.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0198",
@@ -15,16 +19,15 @@
                 },
                 "crab3@vocms0199.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0199",
-		    "weightfactor": 0
+		    "weightfactor": 1
                 }
-
-            },
-            "htcondorPool" : "cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov",
-            "asoConfig" : [
+  },
+  "htcondorPool" : "cmsgwms-collector-global.cern.ch,cmssrv623.fnal.gov",
+  "asoConfig" : [
                 {"couchURL" : "https://cmsweb.cern.ch/crabserver/prod" , "couchDBName" : "filetransfers"}
-            ] 
-        },
-        "compatible-version": [ "3.3.*","development"],
-        "banned-out-destinations": [ ]
-    }
-}
+  ] 
+  },
+ "compatible-version": [ "3.3.*","development"],
+ "banned-out-destinations": [ ]
+ }
+} 
