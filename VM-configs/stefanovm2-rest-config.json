@@ -1,7 +1,9 @@
 {
 	"compatible-version": ["3.3.1", "3.3.2001", "3.3.2003", "3.3.2004"],
 	"banned-out-destinations": [],
-	"delegate-dn": ["/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddivm2|mytw).cern.ch"],
+	"delegate-dn": [
+            "/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch"
+                       ],
 	"htcondorPool": "cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620",
 	"htcondorScheddsLink": "https://gitlab.cern.ch/ddirmait/CRAB3ServerConfig/raw/%236009_fix/cmsweb-shedds-config.json",
 
