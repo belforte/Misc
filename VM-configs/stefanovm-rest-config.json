@@ -13,11 +13,11 @@
                 },
                 "crab3@vocms0106.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0106",
-		    "weightfactor": 0
+		    "weightfactor": 1
                 },
                 "crab3@vocms0198.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0198",
-		    "weightfactor": 1
+		    "weightfactor": 0
                 },
                 "crab3@vocms0199.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/0199",
