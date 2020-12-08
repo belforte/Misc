@@ -5,7 +5,6 @@
                  ],
   "backend-urls": {
   "cacheSSL": "https://stefanovm.cern.ch/crabcache",
-  "baseURL": "https://stefanovm.cern.ch/crabcache",
   "htcondorSchedds" : {
                 "crab3-5@vocms059.cern.ch" : {
                     "proxiedurl": "https://cmsweb-testbed.cern.ch/scheddmon/059",
