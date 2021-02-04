@@ -1,5 +1,5 @@
 {
-	"compatible-version": ["3.3.19", "3.3.20", "development"],
+	"compatible-version": ["v3.*", "development"],
 	"banned-out-destinations": [],
 	"delegate-dn": [
             "/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch"
@@ -13,7 +13,6 @@
 	        "mode" : "crab-dev",
 		"backend-urls": {
  		  "cacheSSL": "https://stefanovm2.cern.ch/crabcache",
- 		  "baseURL": "https://stefanovm2.cern.ch/crabcache",
  		  "htcondorSchedds" : [],
 		  "asoConfig" : [
                 			{"couchURL" : "https://stefanovm2.cern.ch/crabserver/dev" , "couchDBName" : "filetransfers"}] 
