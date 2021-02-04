@@ -17,7 +17,7 @@
                 "crab3@vocms0107.cern.ch" : {
                     "proxiedurl": "https://cmsweb.cern.ch/scheddmon/0198",
 		    "weightfactor": 0
-                },
+                }
   },
   "htcondorPool" : "cmsgwms-collector-global.fnal.gov",
   "asoConfig" : [
