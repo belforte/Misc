@@ -1,5 +1,4 @@
 @startuml
-
 [*] --> NEW : crab submit
 NEW --> HOLDING /' I am gonna work on it '/
 HOLDING --> QUEUE /' I acquire it for my internal queue '/
@@ -20,7 +19,7 @@ SUBMITTED --> NEW : crab-kill,crab-resubmit
 UPLOADED --> SUBMITFAILED : crab-progress
 
 QUEUE --> SUBMITTED
-QUEUE --> SUBMITFAILED
+QUEUE --> SUBMITFAILED 
 
 QUEUE --> RESUBMITFAILED
 RESUBMITFAILED --> NEW
@@ -28,14 +27,15 @@ RESUBMITFAILED --> NEW
 QUEUE --> KILLFAILED
 KILLFAILED --> NEW : crab resubmit
 
-QUEUE --> KILLED
+QUEUE --> KILLED : Command=KILL
 KILLED --> NEW : crab resubmit
 
 ' tape recall
 QUEUE --> TAPERECALL
-TAPERECALL --> NEW
+TAPERECALL --> TAPERECALL : wait for RucioRule
+TAPERECALL --> NEW : RucioRule is OK
 TAPERECALL --> KILLRECALL : crab kill
-KILLRECALL --> KILLED
+KILLRECALL --> KILLED : TapeRecallManager
 
 QUEUE --> NEW : (tw startup)
 
@@ -45,6 +45,5 @@ SUBMITTED --> FAILED : (predag)
 
 SUBMITTED --> COMPLETED : task finish
 
-NEW --> KILLED : NEW command
-
+NEW --> KILLED : crab kill
 @enduml
